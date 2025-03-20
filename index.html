@@ -1,0 +1,200 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Guía de Hardening del Router TP-Link Archer NX200</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="Router_TP-Link_Archer_NX200"
+                  title="Guía de Hardening del Router TP-Link Archer NX200"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Introducción" duration="0">
+        <p>La seguridad de una red doméstica o empresarial comienza con un router correctamente configurado. Esta guía proporciona instrucciones detalladas para fortalecer la seguridad del TP-Link Archer NX200, reduciendo vulnerabilidades y mejorando la protección contra ataques cibernéticos.</p>
+<h2 is-upgraded>Requisitos Previos</h2>
+<ul>
+<li>Router TP-Link Archer NX200</li>
+<li>Acceso a la interfaz web del router (generalmente http://192.168.1.1 o mediante la app <a href="https://www.tp-link.com/es/tether/" target="_blank">TP-Link Tether</a>)</li>
+<li>Credenciales administrativas del router</li>
+</ul>
+<p class="image-container"><img alt="Portada" src="img\\747b349ca1894eca.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 1: Actualización del Firmware" duration="0">
+        <p>Mantener el firmware actualizado es fundamental para corregir vulnerabilidades de seguridad. Para actualizarlo:</p>
+<ol type="1">
+<li>Ingresa a la interfaz web o la app Tether.</li>
+<li>Ve a <strong>&#34;Advanced&#34; → &#34;System Tools&#34; → &#34;Firmware Upgrade&#34;</strong>.</li>
+</ol>
+<p class="image-container"><img alt="Actualización de Firmware" src="img\\23c7c12178d2dc40.png"></p>
+<ol type="1" start="3">
+<li>Activa la opción <strong>&#34;Auto Update&#34;</strong> para recibir las últimas actualizaciones automáticamente.</li>
+<li>Haz clic en <strong>&#34;Check for Upgrades&#34;</strong> para verificar si hay una nueva versión disponible.</li>
+</ol>
+<p class="image-container"><img alt="Opciones de actualización" src="img\\f5efeccf5e73a78.png"></p>
+<ol type="1" start="5">
+<li>Si la actualización automática falla, descarga manualmente el firmware desde <a href="https://www.tp-link.com/es/support/download/archer-nx200/v1/#Firmware" target="_blank">TP-Link Support</a>, selecciona el archivo con &#34;Browse&#34; y pulsa <strong>&#34;Upgrade&#34;</strong>.</li>
+</ol>
+<p class="image-container"><img alt="Carga manual de firmware" src="img\\1c2c3a6d6c6f7b30.png"></p>
+<p><strong>Nota:</strong> No apagues el router durante la actualización para evitar daños en el dispositivo.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 2: Cambio de credenciales por defecto" duration="0">
+        <p>Las credenciales predeterminadas son conocidas y representan un riesgo de seguridad. Para cambiarlas:</p>
+<ol type="1">
+<li>Ve a <strong>&#34;Advanced&#34; → &#34;System Tools&#34; → &#34;Administration&#34;</strong>.</li>
+</ol>
+<p class="image-container"><img alt="Cambio de credenciales" src="img\\fb33881b297d48dd.png"></p>
+<ol type="1" start="2">
+<li>Introduce una nueva contraseña segura y guárdala con &#34;Save&#34;.</li>
+</ol>
+<p class="image-container"><img alt="Formulario de cambio de contraseña" src="img\\3e7dee0f65d2f6bc.png"></p>
+<p><strong>Consejo:</strong> Usa una contraseña de al menos 12 caracteres con letras, números y símbolos.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 3: Configuración segura de Wi-Fi (WPA3)" duration="0">
+        <p>Para mejorar la seguridad de la red Wi-Fi:</p>
+<ol type="1">
+<li>Accede a <strong>&#34;Advanced&#34; → &#34;Wireless&#34; → &#34;Wireless Settings&#34;</strong>.</li>
+</ol>
+<p class="image-container"><img alt="Configuración de Wi-Fi" src="img\\76076df32b522aed.png"></p>
+<ol type="1" start="2">
+<li>Selecciona <strong>&#34;WPA2-PSK[AES] + WPA3-Personal&#34;</strong> como método de cifrado.</li>
+</ol>
+<p class="image-container"><img alt="Selección de WPA3" src="img\\2e8246ca6de30a22.png"></p>
+<ol type="1" start="3">
+<li>Usa una contraseña robusta y segúna los cambios.</li>
+</ol>
+<p class="image-container"><img alt="Cambio de contraseña Wi-Fi" src="img\\331584cf610597dd.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 4: Deshabilitar WPS (Wi-Fi Protected Setup)" duration="0">
+        <p>WPS puede facilitar accesos no autorizados, por lo que se recomienda desactivarlo.</p>
+<ol type="1">
+<li>Ve a <strong>&#34;Advanced&#34; → &#34;Wireless&#34; → &#34;Wireless Settings&#34; → &#34;WPS&#34;</strong>.</li>
+</ol>
+<p class="image-container"><img alt="Configuración de WPS" src="img\\50850b57fa27569c.png"></p>
+<ol type="1" start="2">
+<li>Desactiva la opción WPS y guarda los cambios.</li>
+</ol>
+<p class="image-container"><img alt="Desactivar WPS" src="img\\93e20efadaaa9e36.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 5: Activar Firewall SPI y Protección DoS" duration="0">
+        <p>Para mejorar la seguridad de la red:</p>
+<ol type="1">
+<li>Ve a <strong>&#34;Advanced&#34; → &#34;Security&#34; → &#34;Firewall &amp; DoS Protection&#34;</strong>.</li>
+</ol>
+<p class="image-container"><img alt="Configuración de Firewall" src="img\\529e8060862541aa.png"></p>
+<ol type="1" start="2">
+<li>Activa <strong>&#34;IPv4 SPI Firewall&#34;</strong> y <strong>&#34;IPv6 SPI Firewall&#34;</strong> si usas IPv6.</li>
+<li>Activa <strong>&#34;DoS Protection&#34;</strong>.</li>
+</ol>
+<p class="image-container"><img alt="Habilitación de DoS Protection" src="img\\9667e525e3632af4.png"></p>
+<p><strong>Nota:</strong> Si experimentas lentitud en la red, prueba desactivando <strong>DoS Protection</strong>.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 6: Control de Acceso y Filtrado MAC/IP" duration="0">
+        <p>Para restringir el acceso solo a dispositivos autorizados:</p>
+<ol type="1">
+<li>Ve a <strong>&#34;Advanced&#34; → &#34;Security&#34; → &#34;Access Control&#34;</strong>.</li>
+</ol>
+<p class="image-container"><img alt="Control de acceso" src="img\\2204cdf6648a2906.png"></p>
+<ol type="1" start="2">
+<li>Activa <strong>&#34;Access Control&#34;</strong>.</li>
+</ol>
+<p class="image-container"><img alt="Habilitar Access Control" src="img\\e1c71a7be8a16c65.png"></p>
+<ol type="1" start="3">
+<li>Agrega dispositivos autorizados manualmente con &#34;Add&#34;.</li>
+</ol>
+<p class="image-container"><img alt="Agregar dispositivos" src="img\\6e726a199da6b4da.png"></p>
+<p><strong>Nota:</strong> Se recomienda usar esta opción solo si se administra fácilmente el listado de dispositivos.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 7: Deshabilitar servicios innecesarios" duration="0">
+        <p>Desactivar servicios que no se utilizan reduce los riesgos de seguridad:</p>
+<ol type="1">
+<li>Ve a <strong>&#34;Advanced&#34; → &#34;NAT Forwarding&#34;</strong>.</li>
+</ol>
+<p class="image-container"><img alt="NAT Forwarding" src="img\\6110868e3b61c4ba.png"></p>
+<ol type="1" start="2">
+<li>Desactiva <strong>UPnP, ALG y DMZ</strong> si no son estrictamente necesarios.</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 8: Configuración segura de la red de invitados" duration="0">
+        <p>Para proporcionar acceso seguro a visitantes sin comprometer la red principal:</p>
+<ol type="1">
+<li>Ve a <strong>&#34;Advanced&#34; → &#34;Guest Network&#34;</strong>.</li>
+</ol>
+<p class="image-container"><img alt="Configuración de Red de Invitados" src="img\\3bd7b15be815ae50.png"></p>
+<ol type="1" start="2">
+<li>Activa <strong>&#34;Guest Network&#34;</strong> en ambas bandas y usa WPA3-Personal.</li>
+</ol>
+<p class="image-container"><img alt="Habilitar Red de Invitados" src="img\\c730465eeb572587.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 9: Copia de Seguridad de la Configuración" duration="0">
+        <p>Realizar copias de seguridad periódicas ayuda a restaurar configuraciones en caso de problemas.</p>
+<ol type="1">
+<li>Ve a <strong>&#34;Advanced&#34; → &#34;System Tools&#34; → &#34;Backup &amp; Restore&#34;</strong>.</li>
+</ol>
+<p class="image-container"><img alt="Backup y Restore" src="img\\a06e499ab9b6520f.png"></p>
+<ol type="1" start="2">
+<li>Haz clic en <strong>&#34;Backup&#34;</strong> para descargar el archivo de configuración.</li>
+</ol>
+<p class="image-container"><img alt="Guardar Backup" src="img\\a75d997acadbb37e.png"></p>
+<ol type="1" start="3">
+<li>Para restaurar una configuración previa, selecciona el archivo y haz clic en <strong>&#34;Restore&#34;</strong>.</li>
+</ol>
+<p class="image-container"><img alt="Restaurar Backup" src="img\\97e3bf4e896bf11c.png"></p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

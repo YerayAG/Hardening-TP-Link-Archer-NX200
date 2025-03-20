@@ -1,0 +1,24 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2025-03-20T13:22:18+01:00",
+  "id": "Router_TP-Link_Archer_NX200",
+  "duration": 0,
+  "title": "Guía de Hardening del Router TP-Link Archer NX200",
+  "summary": "Guía de Hardening del Router TP-Link Archer NX200",
+  "source": "codelab.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown"
+  ],
+  "tags": [
+    "web"
+  ],
+  "url": "Router_TP-Link_Archer_NX200"
+}
